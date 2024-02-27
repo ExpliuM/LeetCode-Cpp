@@ -1,0 +1,28 @@
+{
+    "recommendations": [
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-themes",
+        "twxs.cmake",
+        "zchrissirhcz.cmake-highlight",
+        "josetr.cmake-language-support-vscode",
+        "ms-vscode.cmake-tools",
+        "cheshirekow.cmake-format",
+        "streetsidesoftware.code-spell-checker",
+        "vadimcn.vscode-lldb",
+        "withfig.fig",
+        "eamodio.gitlens",
+        "foxundermoon.shell-format",
+        "ms-vscode.test-adapter-converter",
+        "hbenl.vscode-test-explorer",
+        "wayou.vscode-todo-highlight",
+        "gruntfuggly.todo-tree",
+        "vscode-icons-team.vscode-icons",
+        "ue.alphabetical-sorter",
+        "nathanj.cppcheck-plugin",
+        "visualstudioexptteam.intellicode-api-usage-examples",
+        "visualstudioexptteam.vscodeintellicode",
+        "jbenden.c-cpp-flylint",
+        "yzhang.markdown-all-in-one"
+    ]
+}
