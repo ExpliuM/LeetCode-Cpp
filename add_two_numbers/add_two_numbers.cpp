@@ -1,24 +1,24 @@
 #include "add_two_numbers.hpp"
 
-ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
+struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2)
 {
-    if (l1 == nullptr && l2 == nullptr)
+    if (l1 == NULL && l2 == NULL)
     {
-        return nullptr;
+        return NULL;
     }
 
     struct ListNode *result;
-    struct ListNode *next1 = nullptr;
-    struct ListNode *next2 = nullptr;
+    struct ListNode *next1 = NULL;
+    struct ListNode *next2 = NULL;
 
     int sumRes = 0;
-    if (l1 != nullptr)
+    if (l1 != NULL)
     {
         sumRes += l1->val;
         result = l1;
         next1 = l1->next;
     }
-    if (l2 != nullptr)
+    if (l2 != NULL)
     {
         sumRes += l2->val;
         result = l2;
@@ -28,18 +28,20 @@ ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
     result->val = sumRes % 10;
     if (sumRes >= 10)
     {
-        if (next1 == nullptr && next2 == nullptr)
+        if (next1 == NULL && next2 == NULL)
         {
-            result->next = new ListNode();
-            result->next->next = nullptr;
+            result->next = (struct ListNode *)malloc(sizeof(struct ListNode));
+            result->next->next = NULL;
             result->next->val = 1;
             return result;
         }
-        else if (next1 != nullptr)
+        else
+
+            if (next1 != NULL)
         {
             ++(next1->val);
         }
-        else // next2 != nullptr
+        else // next2 != NULL
         {
             ++(next2->val);
         }
