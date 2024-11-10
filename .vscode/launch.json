@@ -1,18 +1,18 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "MIMode": "lldb",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "/Users/alexkhvo/.vscode/extensions/ms-vscode.cpptools-1.18.5-darwin-arm64/debugAdapters/lldb-mi/bin/lldb-mi",
-            "name": "Launch",
-            "preLaunchTask": "CMake: build",
-            "program": "${workspaceFolder}/build/tests",
-            "request": "launch",
-            "stopAtEntry": false,
-            "targetArchitecture": "arm64",
-            "type": "cppdbg",
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "MIMode": "lldb",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "miDebuggerPath": "/Users/alexanderkhvolis/.vscode/extensions/ms-vscode.cpptools-1.22.11-darwin-arm64/debugAdapters/lldb-mi/bin/lldb-mi",
+      "name": "Launch",
+      "preLaunchTask": "CMake: build",
+      "program": "${workspaceFolder}/build/tests",
+      "request": "launch",
+      "stopAtEntry": false,
+      "targetArchitecture": "arm64",
+      "type": "cppdbg"
+    }
+  ]
 }

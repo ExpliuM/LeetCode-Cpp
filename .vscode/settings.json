@@ -101,10 +101,16 @@
         "codecvt": "cpp",
         "forward_list": "cpp",
         "semaphore": "cpp",
-        "typeindex": "cpp"
+        "typeindex": "cpp",
+        "valarray": "cpp",
+        "execution": "cpp",
+        "csignal": "cpp",
+        "future": "cpp",
+        "print": "cpp"
     },
     "cmake.configureSettings": {
         "gtest_build_samples": "ON"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "cmake.ignoreCMakeListsMissing": true
 }

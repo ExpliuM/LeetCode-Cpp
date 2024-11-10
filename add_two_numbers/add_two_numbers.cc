@@ -52,7 +52,4 @@ TEST(leetcode, add_two_numbers)
   res = addTwoNumbers(list1, list2);
   value = getValue(res);
   EXPECT_EQ(value, expectedValue);
-
-  // destroyList(list2);
-  // destroyList(list1);
 }
