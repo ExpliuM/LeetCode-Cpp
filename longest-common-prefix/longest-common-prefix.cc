@@ -1,6 +1,7 @@
 
 /*
  * Link: https://leetcode.com/problems/longest-common-prefix/
+ * Submission: https://leetcode.com/problems/longest-common-prefix/submissions/1448811705/
  */
 
 #include <gtest/gtest.h>
@@ -14,30 +15,44 @@ using namespace std;
 TEST(leetcode, longest_common_prefix)
 {
     // UC 1
-    vector<string> vector1 = {"flower", "flow", "flight"};
-    string expectedValue1 = "fl";
+    vector<string> strs = {"flower", "flow", "flight"};
+    string expected = "fl";
 
-    string result = longestCommonPrefix(vector1);
-    EXPECT_EQ(result, expectedValue1);
+    string result = longestCommonPrefix(strs);
+    EXPECT_EQ(result, expected);
 
     // UC 2
-    vector<string> vector2 = {"dog", "racecar", "car"};
-    string expectedValue2 = "";
+    strs = {"dog", "racecar", "car"};
+    expected = "";
 
-    result = longestCommonPrefix(vector2);
-    EXPECT_EQ(result, expectedValue2);
+    result = longestCommonPrefix(strs);
+    EXPECT_EQ(result, expected);
 
     // UC 3
-    vector<string> vector3 = {"dog", "dog", "dog"};
-    string expectedValue3 = "dog";
+    strs = {"dog", "dog", "dog"};
+    expected = "dog";
 
-    result = longestCommonPrefix(vector3);
-    EXPECT_EQ(result, expectedValue3);
+    result = longestCommonPrefix(strs);
+    EXPECT_EQ(result, expected);
 
     // UC 4
-    vector<string> vector4 = {"dog", "do", "dog"};
-    string expectedValue4 = "do";
+    strs = {"dog", "do", "dog"};
+    expected = "do";
 
-    result = longestCommonPrefix(vector4);
-    EXPECT_EQ(result, expectedValue4);
+    result = longestCommonPrefix(strs);
+    EXPECT_EQ(result, expected);
+
+    // UC 5
+    strs = {"dog"};
+    expected = "dog";
+
+    result = longestCommonPrefix(strs);
+    EXPECT_EQ(result, expected);
+
+    // UC 6
+    strs = {""};
+    expected = "";
+
+    result = longestCommonPrefix(strs);
+    EXPECT_EQ(result, expected);
 }
